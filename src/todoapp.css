@@ -1,0 +1,90 @@
+.todo {
+  align-self: center !important;
+  color: white !important;
+  background-color:rgba(0,0,0,0) !important;
+}
+
+.todo .crossText {
+  text-decoration: line-through !important;
+  color: red !important;
+}
+
+.todo input {
+  background: transparent !important;
+  border: none !important;
+  color: black !important;
+  border-bottom: 5px dashed black !important;
+  min-width: 400px !important;
+  margin-top: 40px !important;
+  padding: 5px !important;
+  font-size: 1rem !important;
+}
+
+.todo input::placeholder {
+  color: black !important;
+  font-size: 1.3rem !important;
+}
+
+.todo input:focus {
+  outline: none !important;
+  border: 2px dotted black !important;
+}
+
+.todo .add-btn {
+  padding: 10px !important;
+  border-radius: 30% !important;
+  color: black !important;
+  font-size: 1.2rem !important;
+  background-color: yellow !important;
+  border: none !important;
+  margin-left: 10px !important;
+  cursor: pointer !important;
+  border: 3px solid black !important;
+}
+
+.todo .add-btn:hover {
+  padding: 15px !important;
+  font-size: 1.5rem !important;
+}
+
+.todo ul {
+  margin-top: 30px !important;
+  font-size: 1.5rem !important;
+}
+
+.todo ul li {
+  list-style: none !important;
+  margin-bottom: 4px !important;
+
+  border: 2px solid black !important;
+  border-radius: 10px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 5px !important;
+  margin-left: -100px !important;
+  background-color: rgb(236, 236, 236, 0.6) !important;
+  font-family: "Permanent Marker", cursive !important;
+  color: black !important;
+}
+.todo ul li .delete {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  float: right !important;
+  border-radius: 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: red !important;
+  color: white !important;
+}
+
+.todo ul li .completed {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  float: right !important;
+  border-radius: 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: green !important;
+  margin-left: 10px !important;
+  color: white !important;
+}
