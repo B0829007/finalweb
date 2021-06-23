@@ -14,7 +14,17 @@ const TWregion = [
     { value:'臺南市' , label: '臺南市'},
     { value:'桃園市' , label: '桃園市'},
     { value:'高雄市' , label: '高雄市'},
-
+    { value:'苗栗縣' , label: '苗栗縣'},
+    { value:'基隆市' , label: '基隆市'},
+    { value:'嘉義縣' , label: '嘉義縣'},
+    { value:'宜蘭縣' , label: '宜蘭縣'},
+    { value:'屏東縣' , label: '屏東縣'},
+    { value:'彰化縣' , label: '彰化縣'},
+    { value:'新竹市' , label: '新竹市'},
+    { value:'新竹縣' , label: '新竹縣'},
+    { value:'臺東縣' , label: '臺東縣'},
+    { value:'花蓮縣' , label: '花蓮縣'},
+    { value:'雲林縣' , label: '雲林縣'},
 ];
 
 function customTheme(theme){
@@ -56,7 +66,7 @@ class Pick extends React.Component {
 
     handleSubmit = (e) =>{
         e.preventDefault();
-        console.log(this.state.startDate)
+        console.log(this.state.startDate.getFullYear)
         let formData = new FormData()
         formData.append("startDate",this.state.startDate)
         const url = "https://cors-anywhere.herokuapp.com/https://final-covid.herokuapp.com/login.php";
@@ -99,15 +109,15 @@ class Pick extends React.Component {
         </Row>
         <Row>
         
-            {/* <Col>
+            <Col>
             <Card className="mb-4" style={{ color: "#000" }}>
                 <Card.Body>
                     <Card.Title>
                         Please Select A Date
                     </Card.Title>
-                    <Card.Text>
+                    {/* <Card.Text>
                         臺灣單日確診數
-                    </Card.Text>
+                    </Card.Text> */}
                     <div className="Date">
                     <DatePicker
                             startDate={this.state.startDate}
@@ -131,7 +141,7 @@ class Pick extends React.Component {
                     </div>
                 </Card.Body>
             </Card>
-            </Col> */}
+            </Col>
             <Col>
             <Card className="mb-4" style={{ color: "#000" }}>
                 <Card.Body>
